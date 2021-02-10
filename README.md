@@ -7,7 +7,7 @@ The code for the Harrow School Silver Arrow Greenpower Team's onboard computer; 
 
 
 The program at Getstarted has everything needed to stream data over http post requests to any specified endpoint.
-The data is encoded in JSON format and is send in the request body. 
+The data is encoded in JSON format and is send in the request body.
 
 Data streamed is : Acceleration [X,Y,Z] , Gyroscope [X,Y,Z] . Magnetomter [X,Y,Z] , Temperature , Pressure , Humidity.
 
