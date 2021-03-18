@@ -11,7 +11,7 @@ The data is encoded in JSON format and is send in the request body.
 
 Data streamed is : Acceleration [X,Y,Z] , Gyroscope [X,Y,Z] . Magnetomter [X,Y,Z] , Temperature , Pressure , Humidity.
 
-It is proved to work with a thingsboard instance running in a Docker container on AWS.
+It is proved to work with a thingsboard instance running in a Docker container on AWS t2 micro EC2.
 
 ## Usage
 
