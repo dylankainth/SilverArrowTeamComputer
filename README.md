@@ -11,6 +11,9 @@ The data is encoded in JSON format and is send in the request body.
 
 Data streamed is : Acceleration [X,Y,Z] , Gyroscope [X,Y,Z] . Magnetomter [X,Y,Z] , Temperature , Pressure , Humidity and Voltage across a specified pin.
 
+The pin can be withing a value of 0-3v and anything over than 3v supplied will not be registered on the board.
+It is highly recommeneded to use a voltage divider and a calculation to account for this division
+
 It is proved to work with a thingsboard instance running in a Docker container on AWS t2 micro EC2.
 
 ## Usage
