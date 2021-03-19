@@ -197,9 +197,15 @@ void loop()
     //Serial.printf("magSensorId: %d\n", magSensorId);
     //Serial.printf("Magnetometer Axes: x=%d, y=%d, z=%d\n", axes[0], axes[1], axes[2]);
 
+    // Read pin
+    float inputvalue = 0;
+    int sensorpin = 16; 
+    inputvalue = analogRead(sensorpin);
+    float voltage = (inputvalue*3/1024);
+
     //Serial.println(" ");
 
-    HTTPClient *httpClient = new HTTPClient(HTTP_POST, "// @ADMIN ENTER ENDPOINT URL HERE!");
+    HTTPClient *httpClient = new HTTPClient(HTTP_POST, "http://35.179.93.155/api/v1/kbX5XWhcGMr6E22elZZm/telemetry");
 
     char xmlBuff[285];
 
@@ -209,6 +215,10 @@ void loop()
     
     strcat(temp,"'temperature':"); 
     strcat(temp,f2s(temperature, 3)); 
+    strcat(temp,",");
+
+    strcat(temp,"'pin0':"); 
+    strcat(temp,f2s(voltage, 3)); 
     strcat(temp,",");
 
     strcat(temp,"'humidity':"); 
@@ -283,7 +293,7 @@ void loop()
     
   }
   digitalWrite(48,LOW);
-  delay(5000);  // Every 5 second delay
+  delay(2400);  // Every 2.5 second delay
   digitalWrite(48,HIGH);
 }
 
