@@ -205,7 +205,7 @@ void loop()
 
     //Serial.println(" ");
 
-    HTTPClient *httpClient = new HTTPClient(HTTP_POST, "http://35.179.93.155/api/v1/kbX5XWhcGMr6E22elZZm/telemetry");
+    HTTPClient *httpClient = new HTTPClient(HTTP_POST, "http://URL/api/v1/CREDENTIALKEY/telemetry");
 
     char xmlBuff[285];
 
