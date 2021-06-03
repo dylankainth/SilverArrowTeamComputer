@@ -1,5 +1,7 @@
-
 # SilverArrowTeamComputer
+
+![SilverArrowRacing](https://img.shields.io/badge/Silver%20Arrow%20Racing-Harrow%20School-blue)
+
 
 ![logo](https://github.com/DylanK46/SilverArrowTeamComputer/blob/master/computerlogo.png?raw=true)
 
