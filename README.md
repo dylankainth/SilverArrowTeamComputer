@@ -1,7 +1,5 @@
 # SilverArrowTeamComputer
 
-![SilverArrowRacing](https://img.shields.io/badge/Silver%20Arrow%20Racing)
-
 ![logo](https://github.com/DylanK46/SilverArrowTeamComputer/blob/master/computerlogo.png?raw=true)
 
 The code for the Silver Arrow Greenpower Team's onboard computer; Using MXCHIP IOT Devkit (AZ3166).
